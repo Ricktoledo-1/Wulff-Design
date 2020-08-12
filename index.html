@@ -1,0 +1,173 @@
+<html>
+    <head>
+        <head lang="en"><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <!-- for google -->
+            <meta name="description" content="Web Design/Development/Content Creation">
+            <!-- author -->
+            <meta name="author" content="Wulff Design">
+            <!-- for key words -->
+            <meta name="keywords" content="Richard Toledo, Wulff Design, Richard Splawski, RDS Design, Development, Apps, Website, Websites, Web, App, Mobile, Responsive, Creation, Design, Designer, Developer, Frontend, Backend,
+            tablet, development, mobile, fullstack, full stack, developers, websites, companies, company, site, new, sleek, modern, UI, UX, ui design, ux design, wordpress, Wordpress, Api, api, 
+            advancement, technology, programming, programmer, javascript, html, css, HTML, CSS, JS, JavaScript, jQuery, react, reactJs, node, express, native, react native">
+            
+            <meta property="og:title" content="Wulff Design">
+            <meta property="og:url" content="http://www.wulffdesign.co/">
+            <meta property="og:site_name" content="Wulff Design">
+            <meta property="og:type" content="website"> 
+            <meta property="og:description" content="Web Design/Development/Content Creation">
+            <meta property="og:image" content="images/logo.png">
+            <link rel="icon" type="image/png" href="">
+            <link rel="stylesheet" type="text/css" href="styles.css">
+            <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+            <title>Wulff Design</title>
+    </head>
+    <body>
+        <div id="top"></div>
+        <nav>
+            <div class="nav-links">
+                <a href="#projects" alt="projects">
+                    Projects
+                </a>
+                 <a href="pages/about.html" alt="about">
+                    About
+                </a>
+                 <a href="pages/contact.html" alt="contact">
+                    Contact
+                </a>
+            </div>
+            <div class="social">
+                <div>
+                    <a href="" alt="linked in link">
+                        <img src="images/linked.png">
+                    </a>
+                </div>
+                <div>
+                    <a href="" alt="instagram link">
+                        <img src="images/insta.png">
+                     </a>
+                </div>
+            </div>
+        </nav>
+
+        <div class="topnav mobileShow">
+            <a href="#home" class="active">Wulff Design</a>
+            <div id="myLinks">
+                <div class="mobile-social mobileShow">
+                    <a href="" alt="linked in link">
+                        <img src="images/w-linked.png">
+                    </a>
+                    <a id="insta-move" href="" alt="instagram link">
+                        <img src="images/w-insta.png">
+                     </a>
+                </div>
+              <a alt="projects" href="#projects">Projects</a>
+              <a alt="about" href="pages/about.html">About</a>
+              <a alt="contact" href="pages/contact.html">Contact</a>
+            </div>
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+              <i class="fa fa-bars"></i>
+            </a>
+          </div>
+          <div class="mobileShow" style="padding: 3% 0%;"></div>
+        <div id="dvid">
+            <div class="nav-links">
+                <a href="#projects" alt="projects">
+                    Projects
+                </a>
+                 <a href="pages/about.html" alt="about">
+                    About
+                </a>
+                 <a href="pages/contact.html" alt="contact">
+                    Contact
+                </a>
+            </div>
+            <div class="social">
+                <div class="linkedin">
+                    <a href="" alt="linked in link">
+                        <img src="images/linked.png">
+                    </a>
+                </div>
+                <div>
+                    <a href="" alt="instagram link">
+                        <img src="images/insta.png">
+                     </a>
+                </div>
+            </div>
+        </div>
+        <div class="logo-container">
+            <div class="logo-img">
+                <img src="images/logo.png" alt="logo">
+               <p> Programming & Multimedia Design </p>
+            </div>
+            <div class="arrow">
+                <a href="#projects" alt="projects">
+                    <img src="images/arrow.png" alt="arrow">
+                </a>
+            </div>
+        </div>
+        <div class="project-column">
+            <div id="othdiv"></div>
+            <div id="projects"></div>
+            <!-- <div class="project-box">
+                <img src="images/facility.png" alt="Joux Art Website">
+            </div> -->
+            
+            <div class="project-box">
+                <img src="images/facility.png" alt="Wulff Facility Maintenance Site">
+                <div class="middle">
+                    <div class="text">
+                        <div>
+                            <a class="block" target="_blank" href="http://wulfffacilitymaintenance.com/">
+                                <img id="hover-logo" src="images/w-logo.png" alt="whatifcbd logo">
+                                <p>Janitorial & Maintenance Services</p>
+                                <span>UI Design | Programming | Domain Management</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="project-box">
+                <img src="images/cbd.png" alt="What If CBD Site">
+                <div class="middle">
+                    <div class="text">
+                        <div>
+                            <a target="_blank" class="block" href="https://whatifcbdstore.com/">
+                                <img id="hover-logo" src="images/cbd-hover.png" alt="whatifcbd logo">
+                                <p>Canabidoil Alternative medicine</p>
+                                <span>UI Design | Programming | Domain Management</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="bottom">
+            <a href="#top">Back to Top <img class="arrow-sm" src="images/arrow-sm.png" alt="arrow up"></a>
+        </div>
+    </body>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+        $(document).ready( function() {
+            $("#dvid").hide(); //hide your div initially
+            var topOfOthDiv = $("#othdiv").offset().top;
+            $(window).scroll(function() {
+                if($(window).scrollTop() > topOfOthDiv){ //scrolled past the other div?
+                    $("#dvid").show(); //reached the desired point -- show div
+                }
+            });
+        });
+
+        function myFunction() {
+            var x = document.getElementById("myLinks");
+            if (x.style.display === "block") {
+                x.style.display = "none";
+            } else {
+                x.style.display = "block";
+            }
+            }
+    </script>
+</html>
+
