@@ -294,7 +294,7 @@ nav a {
     width: 2%;
   }
   .project-box {
-    max-height: 500px;
+    max-height: 300px;
   }
 }
 
@@ -350,6 +350,9 @@ nav a {
   .linkedin img {
     position: relative !important;
     left: 60px !important;
+  }
+  .mobileHide {
+    display: none;
   }
   .mobileShow {
     display: flex;
