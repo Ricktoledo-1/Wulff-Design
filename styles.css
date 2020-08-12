@@ -293,6 +293,9 @@ nav a {
   .arrow-sm {
     width: 2%;
   }
+  .project-box {
+    max-height: 500px;
+  }
 }
 
 @media only screen and (max-width: 650px) {
