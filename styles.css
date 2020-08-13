@@ -505,6 +505,15 @@ textarea {
     font-size: 12px;
     margin-left: -30px;
   }
+  @keyframes MoveUpDown {
+    0%,
+    100% {
+      bottom: -10px;
+    }
+    50% {
+      bottom: 15px;
+    }
+  }
   .logo-img img {
     width: 130%;
     position: relative;
