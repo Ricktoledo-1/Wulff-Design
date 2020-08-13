@@ -324,7 +324,10 @@ nav a:hover {
 .richard img {
   width: 60%;
 }
-
+#instag {
+  position: relative;
+  top: 1.5px;
+}
 /* CONTACT */
 .contact-header {
   margin-right: 5%;
