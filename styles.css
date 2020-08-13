@@ -101,11 +101,11 @@ nav a {
     bottom: 0;
   }
   50% {
-    bottom: 50px;
+    bottom: 20%;
   }
 }
 .arrow img:hover {
-  animation: MoveUpDown 3s linear infinite;
+  animation: MoveUpDown 1s linear infinite;
 }
 
 .nav2 {
@@ -243,8 +243,11 @@ nav a {
 }
 
 .topnav a:hover {
-  background-color: #fff;
-  color: black;
+  background-color: #000;
+  color: #bf3434;
+}
+nav a:hover {
+  color: #bf3434;
 }
 .flex-column {
   display: flex;
@@ -321,6 +324,51 @@ nav a {
 .richard img {
   width: 60%;
 }
+
+/* CONTACT */
+.contact-header {
+  margin-right: 5%;
+  margin-top: 4%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  font-size: 120%;
+  color: #000;
+}
+.contact-header p {
+  color: #707070;
+  font-weight: bold;
+  font-size: 140%;
+}
+.contact-header span {
+  margin-top: 2%;
+  align-self: center;
+  text-align: left;
+}
+.email {
+  color: #000;
+  font-weight: bold;
+}
+.email a {
+  color: #707070;
+}
+.contact-form {
+  font-size: 105%;
+  background: #707070;
+  display: flex;
+  flex-direction: column;
+  color: #fff;
+  align-items: center;
+}
+.contact-form form {
+  position: relative;
+  right: 45%;
+}
+.contact-form input,
+textarea {
+  width: 150%;
+}
 /* RESPONSIVE */
 @media only screen and (max-width: 1550px) {
   .logo-img p {
@@ -334,6 +382,10 @@ nav a {
   .logo-img p {
     margin-left: 6%;
     font-size: 18px;
+  }
+  .contact-header {
+    margin-right: 0;
+    padding: 0 10%;
   }
 }
 
@@ -423,6 +475,13 @@ nav a {
     font-size: 10px;
     margin-right: 4%;
   }
+  .contact-header span {
+    font-size: 80%;
+    margin-bottom: 10px;
+  }
+  .contact-form form {
+    right: 25%;
+  }
 }
 
 @media only screen and (max-width: 510px) {
@@ -439,8 +498,8 @@ nav a {
   .about-header p {
     text-align: left;
     margin-left: 8%;
-    padding: 0 15%;
-    font-size: 70%;
+    padding: 0 1%;
+    font-size: 90%;
   }
 }
 
@@ -468,6 +527,7 @@ nav a {
   .mobileShow {
     display: flex;
   }
+
   .mobile-social {
     display: flex;
     margin-left: 0%;
@@ -480,7 +540,7 @@ nav a {
     font-size: 110%;
   }
   .mobile-social img {
-    width: 205%;
+    width: 115%;
   }
   #insta-move {
     position: relative;
