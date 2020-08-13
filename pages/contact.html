@@ -96,8 +96,8 @@
             <div class="">
                 <p>Email:</p> <input aria-label="contact form" class="contact3" type="text" name="email">
                 <p>Details:</p><textarea class="contact3" name="message" rows="6" cols="25"></textarea><br /></div>
-            <div style="display: flex; align-items: center; justify-content: space-between;" class="contact-button">
-                <div  class="g-recaptcha" data-sitekey="6LfGhb4ZAAAAAA5u7I3OYW1fCdWvaFLIvxxyTv2E" data-callback="enableBtn"></div><div><button type="submit" value="Submit" id="button1" disabled="disabled " style="margin-left: 25%;border: 1px solid #fff; font-size: 110%;  margin-top: 10px; color: #707070; background: #fff; border-radius: 23px; padding: 5px 16px; cursor:pointer" class="submit" aria-label="submit">Submit</button></div> 
+            <div style="margin-top: 5px; display: flex; align-items: center; justify-content: space-between;" class="contact-button">
+                <div class="g-recaptcha" data-sitekey="6LfGhb4ZAAAAAA5u7I3OYW1fCdWvaFLIvxxyTv2E" data-callback="enableBtn"></div><div><button type="submit" value="Submit" id="button1" disabled="disabled " style="margin-left: 25%;border: 1px solid #fff; font-size: 110%;  margin-top: 10px; color: #707070; background: #fff; border-radius: 23px; padding: 5px 16px; cursor:pointer" class="submit" aria-label="submit">Submit</button></div> 
             </div>
                 </form>
             </div>
@@ -113,5 +113,8 @@
             x.style.display = "block";
         }
         }
+        function enableBtn() {
+		document.getElementById("button1").disabled = false;
+	}
 </script>
 </html>
