@@ -369,6 +369,18 @@ nav a:hover {
 textarea {
   width: 150%;
 }
+
+.contact-button {
+  margin-top: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.submit {
+  margin-left: 25%;
+}
+
 /* RESPONSIVE */
 @media only screen and (max-width: 1550px) {
   .logo-img p {
@@ -415,6 +427,13 @@ textarea {
     margin: 0px;
     margin-top: 3%;
     padding: 0 5%;
+  }
+  .contact-form input,
+  textarea {
+    width: 100%;
+  }
+  .contact-form form {
+    right: 0;
   }
 }
 
@@ -479,9 +498,6 @@ textarea {
     font-size: 80%;
     margin-bottom: 10px;
   }
-  .contact-form form {
-    right: 25%;
-  }
 }
 
 @media only screen and (max-width: 510px) {
@@ -495,11 +511,21 @@ textarea {
     right: 15%;
     top: 10%;
   }
+  .contact-form input,
+  textarea {
+    width: 80%;
+  }
+  .submit {
+    margin-left: -110%;
+  }
   .about-header p {
     text-align: left;
     margin-left: 8%;
     padding: 0 1%;
     font-size: 90%;
+  }
+  .contact-button {
+    flex-direction: column;
   }
 }
 
