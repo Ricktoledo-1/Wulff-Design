@@ -98,10 +98,10 @@ nav a {
 @keyframes MoveUpDown {
   0%,
   100% {
-    bottom: 0;
+    bottom: -5%;
   }
   50% {
-    bottom: 20%;
+    bottom: 25%;
   }
 }
 .arrow img:hover {
