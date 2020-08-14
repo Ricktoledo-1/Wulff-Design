@@ -169,6 +169,11 @@ nav a {
   font-size: 180%;
   white-space: nowrap;
 }
+.mobileLink {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 .text span {
   white-space: nowrap;
   color: #bf3434;
