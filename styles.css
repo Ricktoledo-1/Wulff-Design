@@ -7,7 +7,9 @@
 #mozHide {
   display: none !important;
 }
-
+.mobileHide2 {
+  display: flex;
+}
 body {
   margin: 0 auto;
   background: #000;
@@ -424,6 +426,9 @@ textarea {
   .logo-img p {
     margin-left: 1%;
     font-size: 18px;
+  }
+  .mobileHide2 {
+    display: none;
   }
   .text p {
     font-size: 130%;
