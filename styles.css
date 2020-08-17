@@ -237,7 +237,7 @@ nav a {
   display: none;
 }
 .topnav a {
-  color: white;
+  color: #fff;
   padding: 14px 16px;
   text-decoration: none;
   font-size: 17px;
@@ -246,6 +246,7 @@ nav a {
 }
 
 .topnav a.icon {
+  color: #fff;
   background: black;
   display: block;
   position: absolute;

@@ -263,11 +263,14 @@
         });
 
         function myFunction() {
-            var x = document.getElementById("myLinks");
+            let y = document.querySelector(".topnav a.icon");
+            let x = document.getElementById("myLinks");
             if (x.style.display === "block") {
                 x.style.display = "none";
+                y.style.color = "#fff";
             } else {
                 x.style.display = "block";
+                y.style.color = "#bf3434";
             }
             }
     </script>
