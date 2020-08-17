@@ -4,6 +4,9 @@
     display: none !important;
   }
 }
+#mozHide {
+  display: none !important;
+}
 body {
   margin: 0 auto;
   background: #000;
@@ -520,6 +523,9 @@ textarea {
     #mozHide {
       display: flex !important;
     }
+  }
+  #mozHide {
+    display: flex !important;
   }
   .logo-img p {
     font-size: 12px;
