@@ -242,6 +242,9 @@ nav a {
 .mobileShow {
   display: none;
 }
+.landscape {
+  display: none;
+}
 .topnav a {
   color: #fff;
   padding: 14px 16px;
@@ -649,5 +652,21 @@ textarea {
   }
   .arrow-sm {
     width: 3.5%;
+  }
+}
+
+@media only screen and (max-width: 820px) and (orientation: landscape) {
+  .landscape {
+    display: flex;
+    padding-bottom: 6%;
+  }
+  .logo-img img {
+    width: 93%;
+    margin-top: 8%;
+  }
+}
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) {
+  .logo-container {
+    height: 40vh;
   }
 }
