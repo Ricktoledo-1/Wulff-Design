@@ -24,6 +24,7 @@
 }
 
 body {
+  font-family: "Open Sans", sans-serif;
   margin: 0 auto;
   background: #000;
 }
@@ -364,7 +365,7 @@ nav a:hover {
 
 .about-name {
   font-size: 110%;
-  font-family: "Futura PT";
+  font-family: "Open Sans", sans-serif;
   font-weight: bold;
 }
 
@@ -691,7 +692,7 @@ textarea {
 
   .contact-form input,
   textarea {
-    width: 80%;
+    width: 100%;
   }
 
   .submit {
