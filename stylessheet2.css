@@ -254,7 +254,6 @@ nav a {
 
 .project-box img {
   width: 100%;
-  padding-right: 1%;
   transition: 0.5s ease;
   backface-visibility: hidden;
 }
