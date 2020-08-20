@@ -326,6 +326,9 @@ nav a {
 nav a:hover {
   color: #bf3434;
 }
+#dvid a:hover {
+  color: #bf3434;
+}
 
 .flex-column {
   display: flex;
@@ -375,7 +378,8 @@ nav a:hover {
 
 .about-p {
   margin-top: 10%;
-  margin-right: 10%;
+  margin-right: 20;
+  white-space: nowrap;
   font-size: 100%;
   font-family: "Open Sans", sans-serif;
 }
@@ -396,7 +400,8 @@ nav a:hover {
 
 .about-p2 {
   margin-top: 10%;
-  margin-left: 10%;
+  margin-left: 20;
+  white-space: nowrap;
   font-size: 100%;
   padding: 0 10%;
   font-family: "Open Sans", sans-serif;
@@ -548,12 +553,14 @@ textarea {
     margin: 0px;
     margin-top: 3%;
     padding: 0 5%;
+    white-space: normal;
   }
 
   .about-p2 {
     margin: 0px;
     margin-top: 3%;
     padding: 0 5%;
+    white-space: normal;
   }
 
   .contact-form input,
