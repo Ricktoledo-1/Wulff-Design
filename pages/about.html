@@ -22,7 +22,7 @@
         <meta property="og:description" content="Web Design/Development/Content Creation">
         <meta property="og:image" content="../images/logo.png">
         <link rel="icon" type="image/png" href="../images/icon.png">
-        <link rel="stylesheet" type="text/css" href="../stylessheet6.css">
+        <link rel="stylesheet" type="text/css" href="../stylessheet10.css">
         <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
         <link rel="stylesheet"
             href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -31,79 +31,119 @@
     </head>
 
 <body style="background: #fff;">
-    <nav style="position: fixed; top: 0;  width: 100%;" id="about-nav">
-        <div class="nav-links">
-            <a class="mobileHide" href="../projects.html" alt="projects">
+    <nav style="position: fixed; z-index: 100; padding: 0px; width: 100%; display: flex; align-items: center; justify-content: space-around; top: 0; background: rgb(238,238,238, 0.8);"
+        class="mobileHide">
+        <div style="width: 33%;" class="mobileHide">
+            <a class="mobileHide" style="margin-left: 10%; font-size: 18px;" href="../projects.html" alt="projects">
                 Projects
             </a>
-            <a class="mobileHide" href="about.html" alt="about">
+            <a id="pageLink" class="mobileHide" style="margin-left: 10%; font-size: 18px;" href="about.html"
+                alt="about">
                 About
             </a>
-            <a class="mobileHide" href="contact.html" alt="contact">
+            <a class="mobileHide" style="margin-left: 10%; font-size: 18px;" href="contact.html" alt="contact">
                 Contact
             </a>
         </div>
-        <div class="social">
+        <div class="logo-container2 mobileHide">
+            <img class="light mobileHide" src="../images/socialbanner.png" alt="wulff logo small">
+            <img class="dark mobileHide" src="../images/socialbanner2.png" alt="wulff logo hover">
+        </div>
+        <div class="social2 mobileHide" style="margin-right: 3%; width: 33%;">
             <div>
-                <a target="_blank" href="https://www.linkedin.com/company/wulff-design/" alt="linked in link">
-                    <img src="../images/linked.png">
+                <a class="social logo-container3 mobileHide" target="_blank"
+                    href="https://www.linkedin.com/company/wulff-design/" alt="linked in link">
+                    <img class="light2 mobileHide" src="../images/linked.png">
+                    <img class="dark2 mobileHide" src="../images/linked2.png">
                 </a>
             </div>
             <div>
-                <a target="_blank" href="https://www.instagram.com/wulff_design/" alt="instagram link">
-                    <img src="../images/insta.png">
+                <a class="social2 logo-container3 mobileHide" target="_blank"
+                    href="https://www.instagram.com/wulff_design/" alt="instagram link">
+                    <img class="light2 mobileHide" id="instag" src="../images/insta.png">
+                    <img class="dark2 mobileHide" id="instag" src="../images/insta2.png">
                 </a>
             </div>
         </div>
     </nav>
 
+    <div id="mySidenav" class="sidenav mobileShow">
+
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a alt="projects" href="../projects.html" onclick="myFunction()">Projects</a>
+        <a id="m-pageLink" alt="about" href="about.html">About</a>
+        <a alt="contact" href="contact.html">Contact</a>
+    </div>
     <div class="topnav mobileShow">
-        <div>
+        <div style="display: flex;">
             <a href="#home" class="active"><img class="text-logo" alt="wulff-logo" src="../images/nav.png"></a>
+            <div style="display: flex; position: relative; right: 15%; top: 3">
+                <a target="_blank" href="https://www.linkedin.com/company/wulff-design/" alt="linked in link"> <img
+                        class="w-linked2" src="../images/w-linked.png"> </a>
+                <a target=_blank" href="https://www.instagram.com/wulff_design/" alt="instagram link"><img
+                        class="w-insta2" src="
+                        ../images/w-insta.png"> </a> </div>
         </div>
         <div id="myLinks">
             <div class="mobile-social mobileShow">
                 <a target="_blank" href="https://www.linkedin.com/company/wulff-design/" alt="linked in link">
+
                     <img src="../images/w-linked.png">
                 </a>
                 <a target="_blank" id="insta-move" href="https://www.instagram.com/wulff_design/" alt="instagram link">
                     <img src="../images/w-insta.png">
                 </a>
             </div>
-            <a class="mobile-nav" alt="projects" href="../index.html">Projects</a>
-            <a class="mobile-nav" alt="about" href="about.html">About</a>
-            <a class="mobile-nav" alt="contact" href="contact.html">Contact</a>
+            <!-- <a class="mobile-nav" alt="projects" href="#projects" onclick="myFunction()">Projects</a>
+            <a class="mobile-nav" alt="about" href="pages/about.html">About</a>
+            <a class="mobile-nav" alt="contact" href="pages/contact.html">Contact</a> -->
         </div>
-        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+        <a href="javascript:void(0);" class="icon" onclick="openNav()">
             <i class="fa fa-bars"></i>
         </a>
+
     </div>
-    </div>
-    <div class="mobileHide" style="padding: 3% 0%;"></div>
-    <div class="mobileShow" style="padding: 9% 0%;"></div>
+    <div class="mobileHide" style="padding: 2% 0%;"></div>
+    <div class="mobileShow" style="padding: 6% 0%;"></div>
+
+
     <div class="about-header">
         <img style="width: 35%; min-width: 140px;" alt="wulff-logo" src="../images/title.png">
-        <p>Wulff Design is a Web Development/Design Company run by Richard Toledo, and Richard Splawski. We
-            specialize<br class="mobileHide">
-            in custom fully responsive sites and help you through it every step of the way. We offer flat rate jobs, <br
-                class="mobileHide">
+        <p style="text-align: center; padding: 0 15%;" class="mobileHide2">Wulff Design is a Web Development/Design
+            Company run by Richard
+            Toledo, and Richard
+            Splawski. We
+            specialize
+            in custom fully responsive sites and help you through it every step of the way. We offer flat rate jobs,
             subscription based maintenance services, and bug fixes. We excel in Javascript, Jquery, React, HTML5, CSS3,
-            Graphic Design,<br class="mobileHide">
-            Content Creation, Logo Creation, and Web Design.<br class="mobileHide">
+            Graphic Design,
+            Content Creation, Logo Creation, and Web Design.
+        </p>
+
+        <p style="text-align: left; padding: 0 0;" class="mobileShow">Wulff Design is a Web Development/Design
+            Company run by Richard
+            Toledo, and Richard
+            Splawski. We
+            specialize
+            in custom fully responsive sites and help you through it every step of the way. We offer flat rate jobs,
+            subscription based maintenance services, and bug fixes. We excel in Javascript, Jquery, React, HTML5, CSS3,
+            Graphic Design,
+            Content Creation, Logo Creation, and Web Design.
+        </p>
     </div>
     <div class="about-container">
 
         <div class="flex-column">
-            <p class="about-name">Richard Toledo</p>
+            <span class="about-name">Richard Toledo</span>
             <span>Programmer/Developer</span>
-            <a target="_blank" href="https://www.linkedin.com/in/richard-toledo/">LinkedIn</a>
+            <a target="_blank" href="https://www.linkedin.com/in/richard-toledo/">-LinkedIn-</a>
             <div class="richard">
                 <img src="../images/toledo.png">
             </div>
         </div>
         <div class="about-text">
-            <p class="about-p">
-                Richard Toledo is a Web Developer from Southern California with over 2 years of experience <br><br
+            <p class="about-p mobileHide tabletHide">
+                Richard Toledo is a Web Developer from Southern California with over 3 years of experience <br><br
                     class="mobileHide2">
                 in the field. He is a strong advocate for environmental health, animal rights, and a devoted<br><br
                     class="mobileHide2">
@@ -118,19 +158,31 @@
                 Multimedia Content Creation, there isn't much that he cannot build. Whatever<br class="mobileHide2"><br>
                 your site needs may be, he will ensure that your visions come to life.<br>
             </p>
+            <p style="padding: 0 15%;" class="about-p mobileShow tabletShow">
+                Richard Toledo is a Web Developer from Southern California with over 3 years of experience
+                in the field. He is a strong advocate for environmental health, animal rights, and a devoted
+                lover of nature. After Completing his studies at California State University Northridge, and
+                earning his Bachelor'sDegree in Multimedia Production, he began freelancing as a Web
+                Developer. He then enrolled in and graduated from Ironhack Full Stack Bootcamp, where
+                he learned to become a full-stack developer. With skill in both programming and
+                Multimedia Content Creation, there isn't much that he cannot build. Whatever
+                your site needs may be, he will ensure that your visions come to life.<br>
+            </p>
         </div>
     </div>
+
     <div class="about-container2">
         <div class="flex-column">
-            <p class="about-name">Richard Splawski</p>
+            <br>
+            <span class="about-name">Richard Splawski</span>
             <span>Graphic/Web Designer</span>
-            <a target="_blank" href="https://www.linkedin.com/in/richardsplawski/">LinkedIn</a>
+            <a target="_blank" href="https://www.linkedin.com/in/richardsplawski/">-LinkedIn-</a>
             <div class="richard">
                 <img src="../images/splawski.png">
             </div>
         </div>
         <div class="about-text">
-            <p class="about-p2">
+            <p class="about-p2 mobileHide tabletHide">
                 <br><br class="mobileHide2">
                 Richard Splawski was born and raised in Southern California. He has always had a great <br><br
                     class="mobileHide2"> enthusiasm
@@ -153,21 +205,40 @@
                 forming bonds
                 through his designs<br><br class="mobileHide2"> to reach a very wide range of audiences.
             </p>
+
+            <p style="padding: 0 15%;" class="about-p2 mobileShow tabletShow">
+                Richard Splawski was born and raised in Southern California. He has always had a great
+
+                enthusiasm for technology since he was a child, while also pursuing his passion for nature.
+
+                Due to his love for animals, and nature he has always made it a priority to keep
+
+                sustainbility in mind when it comes to making both personal, and business decisions.
+
+                He is a talented multi-media designer with extensive experience working both with design
+
+                teams and individually to achieve goals. He is even a passionate creator of graphic
+
+                campaigns paired with innovative marketing strategy and accustomed to managing
+
+                and performing in deadline driven fast-paced environments. He is always stirving
+
+                towards creating connections and forming bonds through his designs
+
+                to reach a very wide range of audiences.
+            </p>
         </div>
     </div>
     <div style="padding: 3% 0; background: #fff;"></div>
 </body>
 <script>
-    function myFunction() {
-        let y = document.querySelector(".topnav a.icon");
-        let x = document.getElementById("myLinks");
-        if (x.style.display === "block") {
-            x.style.display = "none";
-            y.style.color = "#fff";
-        } else {
-            x.style.display = "block";
-            y.style.color = "#bf3434";
-        }
+    function openNav() {
+        document.getElementById("mySidenav").style.width = "100%";
+    }
+
+    /* Set the width of the side navigation to 0 */
+    function closeNav() {
+        document.getElementById("mySidenav").style.width = "0";
     }
 </script>
 

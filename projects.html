@@ -24,7 +24,7 @@
         <meta property="og:description" content="Web Design/Development/Content Creation">
         <meta property="og:image" content="images/fb-og.png">
         <link rel="icon" type="image/png" href="images/icon.png">
-        <link rel="stylesheet" type="text/css" href="stylessheet6.css">
+        <link rel="stylesheet" type="text/css" href="stylessheet10.css">
         <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
         <link rel="stylesheet"
             href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -34,40 +34,79 @@
 
 <body>
     <div id="top"></div>
-    <nav
-        style="position: fixed; z-index: 100; padding: 0px; width: 100%; display: flex; align-items: center; justify-content: space-around; top: 0; background: rgb(255,255,255, 0.8);">
-        <div style="width: 33%;">
-            <a style="margin-left: 10%; font-size: 18px;" href="projects.html" alt="projects">
+    <nav style="position: fixed; z-index: 100; padding: 0px; width: 100%; display: flex; align-items: center; justify-content: space-around; top: 0; background: rgb(255,255,255, 0.8);"
+        class="mobileHide">
+        <div style="width: 33%;" class="mobileHide">
+            <a class="mobileHide" id="pageLink" style="margin-left: 10%; font-size: 18px;" href="projects.html"
+                alt="projects">
                 Projects
             </a>
-            <a style="margin-left: 10%; font-size: 18px;" href="pages/about.html" alt="about">
+            <a class="mobileHide" style="margin-left: 10%; font-size: 18px;" href="pages/about.html" alt="about">
                 About
             </a>
-            <a style="margin-left: 10%; font-size: 18px;" href="pages/contact.html" alt="contact">
+            <a class="mobileHide" style="margin-left: 10%; font-size: 18px;" href="pages/contact.html" alt="contact">
                 Contact
             </a>
         </div>
-        <div class="logo-container2">
-            <img class="light" src="images/socialbanner.png" alt="wulff logo small">
-            <img class="dark" src="images/socialbanner2.png" alt="wulff logo hover">
+        <div class="logo-container2 mobileHide">
+            <img class="light mobileHide" src="images/socialbanner.png" alt="wulff logo small">
+            <img class="dark mobileHide" src="images/socialbanner2.png" alt="wulff logo hover">
         </div>
-        <div class="social2" style="margin-right: 3%; width: 33%;">
+        <div class="social2 mobileHide" style="margin-right: 3%; width: 33%;">
             <div>
-                <a class="social logo-container3" target="_blank" href="https://www.linkedin.com/company/wulff-design/"
-                    alt="linked in link">
-                    <img class="light2" src="images/linked.png">
-                    <img class="dark2" src="images/linked2.png">
+                <a class="social logo-container3 mobileHide" target="_blank"
+                    href="https://www.linkedin.com/company/wulff-design/" alt="linked in link">
+                    <img class="light2 mobileHide" src="images/linked.png">
+                    <img class="dark2 mobileHide" src="images/linked2.png">
                 </a>
             </div>
             <div>
-                <a class="social2 logo-container3" target="_blank" href="https://www.instagram.com/wulff_design/"
-                    alt="instagram link">
-                    <img class="light2" id="instag" src="images/insta.png">
-                    <img class="dark2" id="instag" src="images/insta2.png">
+                <a class="social2 logo-container3 mobileHide" target="_blank"
+                    href="https://www.instagram.com/wulff_design/" alt="instagram link">
+                    <img class="light2 mobileHide" id="instag" src="images/insta.png">
+                    <img class="dark2 mobileHide" id="instag" src="images/insta2.png">
                 </a>
             </div>
         </div>
     </nav>
+
+    <div id="mySidenav" class="sidenav mobileShow">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a id="m-pageLink" alt="projects" href="projects.html" onclick="myFunction()">Projects</a>
+        <a alt="about" href="pages/about.html">About</a>
+        <a alt="contact" href="pages/contact.html">Contact</a>
+    </div>
+    <div class="topnav mobileShow">
+        <div style="display: flex;">
+            <a href="#home" class="active"><img class="text-logo" alt="wulff-logo" src="images/nav.png"></a>
+            <div style="display: flex; position: relative; right: 15%; top: 3">
+                <a target="_blank" href="https://www.linkedin.com/company/wulff-design/" alt="linked in link"> <img
+                        class="w-linked2" src="images/w-linked.png"> </a>
+                <a target=_blank" href="https://www.instagram.com/wulff_design/" alt="instagram link"><img
+                        class="w-insta2" src="
+                        images/w-insta.png"> </a> </div>
+        </div>
+        <div id="myLinks">
+            <div class="mobile-social mobileShow">
+                <a target="_blank" href="https://www.linkedin.com/company/wulff-design/" alt="linked in link">
+
+                    <img src="images/w-linked.png">
+                </a>
+                <a target="_blank" id="insta-move" href="https://www.instagram.com/wulff_design/" alt="instagram link">
+                    <img src="images/w-insta.png">
+                </a>
+            </div>
+            <!-- <a class="mobile-nav" alt="projects" href="#projects" onclick="myFunction()">Projects</a>
+            <a class="mobile-nav" alt="about" href="pages/about.html">About</a>
+            <a class="mobile-nav" alt="contact" href="pages/contact.html">Contact</a> -->
+        </div>
+        <a href="javascript:void(0);" class="icon" onclick="openNav()">
+            <i class="fa fa-bars"></i>
+        </a>
+
+    </div>
+    <div class="mobileShow" style="padding: 3% 0%;"></div>
+    <div class="portraitShow" style="padding: 3% 0%;"></div>
     <div class="container">
         <div class="mySlides fade">
             <img src="images/slide1t.png" style="width:100%">
@@ -85,29 +124,9 @@
         <img src="images/arrow-left.png" class="prev1" onclick="plusSlides(-1)"></img>
         <img src=" images/arrow-right.png" class="next1" onclick="plusSlides(1)"></img>
     </div>
-    <!-- <div class="topnav mobileShow">
-        <div>
-            <a href="#home" class="active"><img class="text-logo" alt="wulff-logo" src="images/nav.png"></a>
-        </div>
-        <div id="myLinks">
-            <div class="mobile-social mobileShow">
-                <a target="_blank" href="https://www.linkedin.com/company/wulff-design/" alt="linked in link">
-                    <img src="images/w-linked.png">
-                </a>
-                <a target="_blank" id="insta-move" href="https://www.instagram.com/wulff_design/" alt="instagram link">
-                    <img src="images/w-insta.png">
-                </a>
-            </div>
-            <a class="mobile-nav" alt="projects" href="#projects" onclick="myFunction()">Projects</a>
-            <a class="mobile-nav" alt="about" href="pages/about.html">About</a>
-            <a class="mobile-nav" alt="contact" href="pages/contact.html">Contact</a>
-        </div>
-        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-            <i class="fa fa-bars"></i>
-        </a>
-    </div>
-    <div class="mobileShow" style="padding: 3% 0%;"></div>
-    <div id="dvid">
+
+
+    <!-- <div id="dvid">
         <div class="nav-links hide">
             <a class="mobileHide" href="#projects" alt="projects">
                 Projects
@@ -131,10 +150,17 @@
                 </a>
             </div>
         </div>
-    </div> -->
+    </div>  -->
 
     <div id="othdiv"></div>
-    <div class="mobileShow" style="padding: 2% 0%;"></div>
+    <div class="dark-header">
+        <hr class="hr-line">
+        </hr>
+        <p class="d-header">
+            WEB DEVELOPMENT & DESIGN
+        </p>
+    </div>
+
     <div class="project-container">
         <div class="project-column">
             <div id="projects"></div>
@@ -143,6 +169,83 @@
             </div> -->
 
             <div class="project-box othdiv">
+                <img src="images/mybatpro-full.png" alt="Mybatpro Site">
+                <div class="middle">
+                    <div class="text">
+                        <div>
+                            <div class="portraitShow" style="padding-top: 7%;"></div>
+                            <img id="hover-logo3" src="images/mybat.png">
+                            <p>Cell Phones/Accessories</p>
+                            <span>UI Design | Programming</span>
+                            <br><br>
+                            <a class="hover-box" target="_blank" href="https://www.mybatpro.com/">Live
+                                URL</a>
+                            <!-- <div class="mobileLink mobileShow2">
+                                <img id="hover-logo" src="images/sslogo.png">
+                                <p>Music/Music Videos</p>
+                                <span>UI Design | Programming | Domain Management</span>
+                                <br>
+                                <a id="mobileSize" target="_blank" href="https://sound-space.netlify.app/"
+                                    style="text-decoration: none; color: #fff;" href="">Click Here to View Site</a>
+                            </div> -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="project-box">
+                <img src="https://raw.githubusercontent.com/Rickytoledo/Wulff-Design/master/images/cbd.png"
+                    alt="What If CBD Site">
+                <div class="middle">
+                    <div class="text" style="margin: 0px">
+                        <div>
+                            <div target="_blank" class="block" href="https://whatifcbdstore.com/">
+                                <img style="width: 20%;" id="hover-logo2" src="images/cbd-hover.png"
+                                    alt="whatifcbd logo">
+                                <p>Canabidoil Alternative medicine</p>
+                                <span>UI Design | Programming | Domain Management</span>
+                                <br><br>
+                                <a id="whatiflive" class="hover-box" target="_blank"
+                                    href="https://whatifcbdstore.com/">Live URL</a>
+                            </div>
+                            <!-- <div class="mobileLink mobileShow2">
+                                <img id="hover-logo2" src="images/cbd-hover.png" alt="whatifcbd logo">
+                                <p>Canabidoil Alternative medicine</p>
+                                <span>UI Design | Programming | Domain Management</span>
+                                <br>
+                                <a id="mobileSize" target="_blank" href="https://whatifcbdstore.com/"
+                                    style="text-decoration: none; color: #fff;" href="">Click Here to View Site</a>
+                            </div> -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="project-column">
+            <div class="project-box">
+                <img src="images/jouxco.png" alt="Joux Co Site">
+                <div class="middle">
+                    <div class="text">
+                        <div>
+                            <img id="hover-logo4" src="images/jouxlogo.png">
+                            <p>Artwork/Merchandise</p>
+                            <span>UI Design | Programming | Domain Management</span>
+                            <br><br>
+                            <a id="whatiflive2" class="hover-box" target="_blank" href="pages/warning.html">Live
+                                URL</a>
+                            <!-- <div class="mobileLink mobileShow2">
+                                <img id="hover-logo" src="images/sslogo.png">
+                                <p>Music/Music Videos</p>
+                                <span>UI Design | Programming | Domain Management</span>
+                                <br>
+                                <a id="mobileSize" target="_blank" href="https://sound-space.netlify.app/"
+                                    style="text-decoration: none; color: #fff;" href="">Click Here to View Site</a>
+                            </div> -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project-box">
                 <img src="https://raw.githubusercontent.com/Rickytoledo/Wulff-Design/master/images/facility.png"
                     alt="Wulff Facility Maintenance Site">
                 <div class="middle">
@@ -163,87 +266,6 @@
                                 <span>UI Design | Programming | Domain Management</span>
                                 <br>
                                 <a id="mobileSize" target="_blank" href="http://wulfffacilitymaintenance.com/"
-                                    style="text-decoration: none; color: #fff;" href="">Click Here to View Site</a>
-                            </div> -->
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="project-box">
-                <img src="https://raw.githubusercontent.com/Rickytoledo/Wulff-Design/master/images/cbd.png"
-                    alt="What If CBD Site">
-                <div class="middle">
-                    <div class="text" style="margin: 0px">
-                        <div>
-                            <div target="_blank" class="block mobileHide2" href="https://whatifcbdstore.com/">
-                                <img style="width: 20%;" id="hover-logo2" src="images/cbd-hover.png"
-                                    alt="whatifcbd logo">
-                                <p>Canabidoil Alternative medicine</p>
-                                <span>UI Design | Programming | Domain Management</span>
-                                <br><br>
-                                <a class="hover-box" target="_blank" href="https://whatifcbdstore.com/">Live URL</a>
-                            </div>
-                            <!-- <div class="mobileLink mobileShow2">
-                                <img id="hover-logo2" src="images/cbd-hover.png" alt="whatifcbd logo">
-                                <p>Canabidoil Alternative medicine</p>
-                                <span>UI Design | Programming | Domain Management</span>
-                                <br>
-                                <a id="mobileSize" target="_blank" href="https://whatifcbdstore.com/"
-                                    style="text-decoration: none; color: #fff;" href="">Click Here to View Site</a>
-                            </div> -->
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="project-column">
-            <div class="project-box">
-                <img src="  https://raw.githubusercontent.com/Rickytoledo/Wulff-Design/master/images/soundSpace.png"
-                    alt="Sound Space Site">
-                <div class="middle">
-                    <div class="text">
-                        <div>
-                            <a class="block mobileHide2" target="_blank" href="https://sound-space.netlify.app/">
-                                <img id="hover-logo" src="images/sslogo.png">
-                                <p>Music/Music Videos</p>
-                                <span>UI Design | Programming | Domain Management</span>
-                                <br><br>
-                                <a class="hover-box" target="_blank" href="https://sound-space.netlify.app/">Live
-                                    URL</a>
-                            </a>
-                            <!-- <div class="mobileLink mobileShow2">
-                                <img id="hover-logo" src="images/sslogo.png">
-                                <p>Music/Music Videos</p>
-                                <span>UI Design | Programming | Domain Management</span>
-                                <br>
-                                <a id="mobileSize" target="_blank" href="https://sound-space.netlify.app/"
-                                    style="text-decoration: none; color: #fff;" href="">Click Here to View Site</a>
-                            </div> -->
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="project-box">
-                <img src="  https://raw.githubusercontent.com/Rickytoledo/Wulff-Design/master/images/soundSpace.png"
-                    alt="Sound Space Site">
-                <div class="middle">
-                    <div class="text">
-                        <div>
-                            <a class="block mobileHide2" target="_blank" href="https://sound-space.netlify.app/">
-                                <img id="hover-logo" src="images/sslogo.png">
-                                <p>Music/Music Videos</p>
-                                <span>UI Design | Programming | Domain Management</span>
-                                <br><br>
-                                <a class="hover-box" target="_blank" href="https://sound-space.netlify.app/">Live
-                                    URL</a>
-                            </a>
-                            <!-- <div class="mobileLink mobileShow2">
-                                <img id="hover-logo" src="images/sslogo.png">
-                                <p>Music/Music Videos</p>
-                                <span>UI Design | Programming | Domain Management</span>
-                                <br>
-                                <a id="mobileSize" target="_blank" href="https://sound-space.netlify.app/"
                                     style="text-decoration: none; color: #fff;" href="">Click Here to View Site</a>
                             </div> -->
                         </div>
@@ -328,6 +350,15 @@
         slides[slideIndex - 1].style.display = "block";
         dots[slideIndex - 1].className += " active";
         // captionText.innerHTML = dots[slideIndex - 1].alt;
+    }
+
+    function openNav() {
+        document.getElementById("mySidenav").style.width = "100%";
+    }
+
+    /* Set the width of the side navigation to 0 */
+    function closeNav() {
+        document.getElementById("mySidenav").style.width = "0";
     }
 </script>
 

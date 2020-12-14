@@ -24,7 +24,7 @@
         <meta property="og:description" content="Web Design/Development/Content Creation">
         <meta property="og:image" content="images/fb-og.png">
         <link rel="icon" type="image/png" href="images/icon.png">
-        <link rel="stylesheet" type="text/css" href="stylessheet6.css">
+        <link rel="stylesheet" type="text/css" href="stylessheet10.css">
         <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
         <link rel="stylesheet"
             href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -32,7 +32,7 @@
         <title>Wulff Design</title>
     </head>
 
-<body>
+<body style="background: #fff;">
     <div id="top"></div>
     <nav>
         <div class="nav-links show">
@@ -60,31 +60,45 @@
         </div>
     </nav>
 
+    <div id="mySidenav" class="sidenav mobileShow">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a alt="projects" href="projects.html" onclick="myFunction()">Projects</a>
+        <a alt="about" href="pages/about.html">About</a>
+        <a alt="contact" href="pages/contact.html">Contact</a>
+    </div>
     <div class="topnav mobileShow">
-        <div>
+        <div style="display: flex;">
             <a href="#home" class="active"><img class="text-logo" alt="wulff-logo" src="images/nav.png"></a>
+            <div style="display: flex; position: relative; right: 15%; top: 3">
+                <a target="_blank" href="https://www.linkedin.com/company/wulff-design/" alt="linked in link"> <img
+                        class="w-linked2" src="images/w-linked.png"> </a>
+                <a target=_blank" href="https://www.instagram.com/wulff_design/" alt="instagram link"><img
+                        class="w-insta2" src="
+                        images/w-insta.png"> </a> </div>
         </div>
         <div id="myLinks">
             <div class="mobile-social mobileShow">
                 <a target="_blank" href="https://www.linkedin.com/company/wulff-design/" alt="linked in link">
+
                     <img src="images/w-linked.png">
                 </a>
                 <a target="_blank" id="insta-move" href="https://www.instagram.com/wulff_design/" alt="instagram link">
                     <img src="images/w-insta.png">
                 </a>
             </div>
-            <a class="mobile-nav" alt="projects" href="#projects" onclick="myFunction()">Projects</a>
+            <!-- <a class="mobile-nav" alt="projects" href="#projects" onclick="myFunction()">Projects</a>
             <a class="mobile-nav" alt="about" href="pages/about.html">About</a>
-            <a class="mobile-nav" alt="contact" href="pages/contact.html">Contact</a>
+            <a class="mobile-nav" alt="contact" href="pages/contact.html">Contact</a> -->
         </div>
-        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+        <a href="javascript:void(0);" class="icon" onclick="openNav()">
             <i class="fa fa-bars"></i>
         </a>
+
     </div>
-    <div class="mobileShow" style="padding: 3% 0%;"></div>
+    <div class="sm-portraitShow" style="padding: 6% 0%;"></div>
     <div id="dvid">
         <div class="nav-links hide">
-            <a class="mobileHide" href="#projects" alt="projects">
+            <a class="mobileHide" href="projects.html" alt="projects">
                 Projects
             </a>
             <a class="mobileHide" href="pages/about.html" alt="about">
@@ -107,6 +121,7 @@
             </div>
         </div>
     </div>
+    <div style="padding: 6% 0;" class="mobileShow"></div>
     <div class="logo-container">
         <div class="logo-img">
             <img src="images/logo.png" alt="logo">
@@ -156,6 +171,15 @@
             x.style.display = "block";
             y.style.color = "#bf3434";
         }
+    }
+
+    function openNav() {
+        document.getElementById("mySidenav").style.width = "100%";
+    }
+
+    /* Set the width of the side navigation to 0 */
+    function closeNav() {
+        document.getElementById("mySidenav").style.width = "0";
     }
 </script>
 

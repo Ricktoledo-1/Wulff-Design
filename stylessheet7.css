@@ -1233,7 +1233,7 @@ textarea {
 
   #whatiflive {
     position: relative;
-    bottom: 8px;
+    bottom: 10px;
   }
 
   #whatiflive2 {
@@ -1251,12 +1251,15 @@ textarea {
   }
 
   .hr-line {
-    top: 17;
+    top: 13;
     width: 80%;
   }
 
-  .dark-header {
-    padding-top: 5px;
+
+  .hr-line,
+  .d-header {
+    position: relative;
+    bottom: 5px;
   }
 
   .prev1,

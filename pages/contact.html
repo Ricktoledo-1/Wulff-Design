@@ -22,7 +22,7 @@
         <meta property="og:description" content="Web Design/Development/Content Creation">
         <meta property="og:image" content="../images/logo.png">
         <link rel="icon" type="image/png" href="../images/icon.png">
-        <link rel="stylesheet" type="text/css" href="../stylessheet6.css">
+        <link rel="stylesheet" type="text/css" href="../stylessheet10.css">
         <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
         <link rel="stylesheet"
             href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -32,83 +32,142 @@
     </head>
 
 <body style="background: #fff;">
-    <nav style="position: fixed; top: 0; z-index: 100; width: 100%;" id="about-nav">
-        <div class="nav-links">
-            <a class="mobileHide" href="../projects.html" alt="projects">
+    <nav style="position: fixed; z-index: 100; padding: 0px; width: 100%; display: flex; align-items: center; justify-content: space-around; top: 0; background: rgb(238,238,238, 0.8);"
+        class="mobileHide">
+        <div style="width: 33%;" class="mobileHide">
+            <a class="mobileHide" style="margin-left: 10%; font-size: 18px;" href="../projects.html" alt="projects">
                 Projects
             </a>
-            <a class="mobileHide" href="about.html" alt="about">
+            <a class="mobileHide" style="margin-left: 10%; font-size: 18px;" href="about.html" alt="about">
                 About
             </a>
-            <a class="mobileHide" href="contact.html" alt="contact">
+            <a id="pageLink" class="mobileHide" style="margin-left: 10%; font-size: 18px;" href="contact.html"
+                alt="contact">
                 Contact
             </a>
         </div>
-        <div class="social">
+        <div class="logo-container2 mobileHide">
+            <img class="light mobileHide" src="../images/socialbanner.png" alt="wulff logo small">
+            <img class="dark mobileHide" src="../images/socialbanner2.png" alt="wulff logo hover">
+        </div>
+        <div class="social2 mobileHide" style="margin-right: 3%; width: 33%;">
             <div>
-                <a target="_blank" href="https://www.linkedin.com/company/wulff-design/" alt="linked in link">
-                    <img src="../images/linked.png">
+                <a class="social logo-container3 mobileHide" target="_blank"
+                    href="https://www.linkedin.com/company/wulff-design/" alt="linked in link">
+                    <img class="light2 mobileHide" src="../images/linked.png">
+                    <img class="dark2 mobileHide" src="../images/linked2.png">
                 </a>
             </div>
             <div>
-                <a target="_blank" href="https://www.instagram.com/wulff_design/" alt="instagram link">
-                    <img src="../images/insta.png">
+                <a class="social2 logo-container3 mobileHide" target="_blank"
+                    href="https://www.instagram.com/wulff_design/" alt="instagram link">
+                    <img class="light2 mobileHide" id="instag" src="../images/insta.png">
+                    <img class="dark2 mobileHide" id="instag" src="../images/insta2.png">
                 </a>
             </div>
         </div>
     </nav>
 
+    <div id="mySidenav" class="sidenav mobileShow">
+
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a alt="projects" href="../projects.html" onclick="myFunction()">Projects</a>
+        <a alt="about" href="about.html">About</a>
+        <a id="m-pageLink" alt="contact" href="contact.html">Contact</a>
+    </div>
     <div class="topnav mobileShow">
-        <div>
+        <div style="display: flex;">
             <a href="#home" class="active"><img class="text-logo" alt="wulff-logo" src="../images/nav.png"></a>
+            <div style="display: flex; position: relative; right: 15%; top: 3">
+                <a target="_blank" href="https://www.linkedin.com/company/wulff-design/" alt="linked in link"> <img
+                        class="w-linked2" src="../images/w-linked.png"> </a>
+                <a target=_blank" href="https://www.instagram.com/wulff_design/" alt="instagram link"><img
+                        class="w-insta2" src="
+                        ../images/w-insta.png"> </a> </div>
         </div>
         <div id="myLinks">
             <div class="mobile-social mobileShow">
                 <a target="_blank" href="https://www.linkedin.com/company/wulff-design/" alt="linked in link">
+
                     <img src="../images/w-linked.png">
                 </a>
                 <a target="_blank" id="insta-move" href="https://www.instagram.com/wulff_design/" alt="instagram link">
                     <img src="../images/w-insta.png">
                 </a>
             </div>
-            <a class="mobile-nav" alt="projects" href="../index.html">Projects</a>
-            <a class="mobile-nav" alt="about" href="about.html">About</a>
-            <a class="mobile-nav" alt="contact" href="contact.html">Contact</a>
+            <!-- <a class="mobile-nav" alt="projects" href="#projects" onclick="myFunction()">Projects</a>
+            <a class="mobile-nav" alt="about" href="pages/about.html">About</a>
+            <a class="mobile-nav" alt="contact" href="pages/contact.html">Contact</a> -->
         </div>
-        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+        <a href="javascript:void(0);" class="icon" onclick="openNav()">
             <i class="fa fa-bars"></i>
         </a>
+
     </div>
-    </div>
-    <div class="mobileShow" style="padding: 7% 0%;"></div>
+    <div class="mobileShow" style="padding: 3% 0%;"></div>
     <div class="contact-header">
         <p>Contact Us</p>
-        <span>Contact us today to discuss your vision, your needs, and your budget, and we will do everything in our
-            power to work with you<br>
+        <hr style="width: 37%; left: 2%; background: #707070;; margin: 0px; padding: 0px; position: relative; bottom: 23px;"
+            class="
+            mobileShow">
+        </hr>
+        <hr style="width: 10%; left: 2%; background: #707070;; margin: 0px; padding: .5 0px; position: relative; bottom: 23px;"
+            class="
+        mobileHide">
+        </hr>
+        <span style="margin-left: 5%; padding: 0 25%; line-height: 1.7;" class="mobileHide"> &nbsp; &nbsp; &nbsp;
+            Contact us today to
+            discuss your vision,
+            your needs, and
+            your
+            budget, and we will do
+            everything in our
+            power to work with you
             and provide you with a fair, and reasonable price for the amount of work that is required. We price on a
-            case by case basis because<br>
+            case by case basis because
             we understand that evey situation is completely different, and we know that during these hard times a little
-            flexibility can go a long way.<br>
+            flexibility can go a long way.
             You can contact us by phone, email, or for your convenience we have also provided a direct contact form that
             you can access below.</span>
-        <span class="email">
-            Phone: <a href="tel:818-796-2388">818-796-2388</a><br>
-            Email: <a href="mailto:wulff.design.development@gmail.com">Wulff.Design.Development@Gmail</a><br>
+
+        <span style="margin-left: 2%; padding: 0 5%; font-size: 65%; line-height: 1.5;" class="mobileShow"> &nbsp;
+            &nbsp; &nbsp;
+            Contact us today to
+            discuss your vision,
+            your needs, and
+            your
+            budget, and we will do
+            everything in our
+            power to work with you
+            and provide you with a fair, and reasonable price for the amount of work that is required. We price on a
+            case by case basis because
+            we understand that evey situation is completely different, and we know that during these hard times a little
+            flexibility can go a long way.
+            You can contact us by phone, email, or for your convenience we have also provided a direct contact form that
+            you can access below.</span>
+        <span style="padding: 5px 0px;" class="email">
+            Phone:<br class="portraitShow"> <a style="text-decoration: none;"
+                href="tel:805-587-3823">805-587-3823</a><br>
+            Email: <a style="text-decoration: none;"
+                href="mailto:wulff.design.development@gmail.com">Wulff.Design.Development@Gmail</a><br>
         </span>
     </div><br>
     <div class="contact-form">
         <div class="contact-form">
-            <form action="http://wulfffacilitymaintenance.com/images/mail.php" method="POST">
-                <p>First Name:</p> <input class="contact3" type="text" name="firstname">
+            <form autocomplete="false" action="mail.php" method="POST">
+                <input autocomplete="false" name="hidden" type="text" style="display:none;">
+                <p>First Name:</p> <input autocomplete="false" class="contact3" type="text" name="firstname">
                 <div class="">
-                    <p>Last Name:</p> <input class="contact3" type="text" name="lastname">
+                    <p>Last Name:</p> <input autocomplete="false" class="contact3" type="text" name="lastname">
                 </div>
                 <div class="">
-                    <p>Email:</p> <input aria-label="contact form" class="contact3" type="text" name="email">
-                    <p>Details:</p><textarea class="contact3" name="message" rows="6" cols="25"></textarea><br />
+                    <p>Email:</p> <input autocomplete="false" aria-label="contact form" class="contact3" type="text"
+                        name="email">
+                    <p>Details:</p><textarea autocomplete="false" class="contact3" name="message" rows="6"
+                        cols="25"></textarea><br />
                 </div>
                 <div class="contact-button">
-                    <div class="g-recaptcha" data-sitekey="6LfGhb4ZAAAAAA5u7I3OYW1fCdWvaFLIvxxyTv2E"
+                    <div class="g-recaptcha" data-sitekey="6LcfjAQaAAAAAIeXp_VTVh1ZTFeUhAo1SElQzyx5"
                         data-callback="enableBtn"></div>
                     <div><button type="submit" value="Submit" id="button1" disabled="disabled "
                             style="border: 1px solid #fff; font-size: 110%;  margin-top: 10px; color: #707070; background: #fff; border-radius: 23px; padding: 5px 16px; cursor:pointer"
@@ -134,6 +193,15 @@
 
     function enableBtn() {
         document.getElementById("button1").disabled = false;
+    }
+
+    function openNav() {
+        document.getElementById("mySidenav").style.width = "100%";
+    }
+
+    /* Set the width of the side navigation to 0 */
+    function closeNav() {
+        document.getElementById("mySidenav").style.width = "0";
     }
 </script>
 
