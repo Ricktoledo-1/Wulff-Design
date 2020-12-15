@@ -266,7 +266,7 @@ nav a {
 .sidenav a {
   padding: 8px 8px 8px 32px;
   text-decoration: none;
-  font-size: 25px;
+  font-size: 125% !important;
   color: #fff;
   display: block;
   transition: 0.3s;
@@ -1560,6 +1560,10 @@ textarea {
     right: 15%;
   }
 
+  .dark-header {
+    height: 10%;
+  }
+
   .logo-img p {
     margin-top: 5px;
     font-size: 220%;
@@ -1630,9 +1634,33 @@ textarea {
   }
 }
 
+@media only screen and (max-width: 420px) and (orientation: portrait) {
+  .dark-header {
+    padding-top: 1px;
+    width: 100%;
+    background: #333;
+    height: 6.5%;
+    margin: 0 auto;
+  }
+
+  #hover-logo2 {
+    width: 40%;
+    margin-top: 3%;
+  }
+
+  #hover-logo3 {
+    width: 25%;
+    opacity: 1;
+  }
+}
+
 @media only screen and (max-width: 830px) and (orientation: landscape) {
   #othdiv {
     bottom: 20%;
+  }
+
+  .dark-header {
+    height: 19%;
   }
 
   .logo-img img {

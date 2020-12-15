@@ -266,7 +266,7 @@ nav a {
 .sidenav a {
   padding: 8px 8px 8px 32px;
   text-decoration: none;
-  font-size: 25px;
+  font-size: 145% !important;
   color: #fff;
   display: block;
   transition: 0.3s;
@@ -1560,6 +1560,10 @@ textarea {
     right: 15%;
   }
 
+  .dark-header {
+    padding-bottom: 6%;
+  }
+
   .logo-img p {
     margin-top: 5px;
     font-size: 220%;
@@ -1630,9 +1634,34 @@ textarea {
   }
 }
 
+@media only screen and (max-width: 420px) and (orientation: portrait) {
+  .dark-header {
+    padding-top: 1px;
+    width: 100%;
+    background: #333;
+    height: 6.5%;
+    margin: 0 auto;
+  }
+
+  #hover-logo2 {
+    width: 40%;
+    margin-top: 1%;
+  }
+
+  #hover-logo3 {
+    width: 25%;
+    opacity: 1;
+  }
+}
+
+
 @media only screen and (max-width: 830px) and (orientation: landscape) {
   #othdiv {
     bottom: 20%;
+  }
+
+  .dark-header {
+    padding-bottom: 8%;
   }
 
   .logo-img img {
@@ -1676,6 +1705,10 @@ textarea {
     bottom: 20%;
   }
 
+  .dark-header {
+    padding-bottom: 10%;
+  }
+
   .logo-img img {
     width: 105%;
     position: relative;
@@ -1706,6 +1739,10 @@ textarea {
 
   .arrow img {
     right: 20%;
+  }
+
+  .dark-header {
+    height: 6.5%;
   }
 
   .sm-portraitShow {
@@ -1813,6 +1850,10 @@ textarea {
     right: 52%;
   }
 
+  .dark-header {
+    height: 6.5%;
+  }
+
   .logo-img p {
     font-size: 84%;
     position: relative;
@@ -1895,4 +1936,11 @@ textarea {
     right: 38%;
   }
 
+  .d-header {
+    position: relative;
+  }
+
+  .dark-header {
+    padding-top: 20;
+  }
 }
